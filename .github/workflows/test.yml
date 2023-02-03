@@ -24,4 +24,8 @@ jobs:
   test-print:
     name: Print input
     run: echo ${{ inputs.custom }}
+  
+  test-print-2:
+    name: Print input 2
+    run: echo "Hello"
  

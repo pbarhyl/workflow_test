@@ -4,6 +4,8 @@ on:
   workflow_call
   
 jobs:
-  test:
-    run: echo "Custom 2 workflow"
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "IN CUSTOM 2"
   

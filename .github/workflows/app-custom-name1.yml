@@ -2,8 +2,10 @@ name: Custom 1
 
 on:
   workflow_call
-
+  
 jobs:
-  test:
-    run: echo "Custom 1 workflow"
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "IN CUSTOM 1"
   

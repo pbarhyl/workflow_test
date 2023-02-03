@@ -1,0 +1,6 @@
+name: Custom 2
+
+jobs:
+  test:
+    run: echo "Custom 2 workflow"
+  

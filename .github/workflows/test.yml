@@ -1,0 +1,27 @@
+name: 🚨 Test
+
+on:
+  workflow_call:
+    inputs:
+      custom:
+        description: Some custom string
+        required: true
+        type: string
+
+jobs:
+  test1:
+    name: 🧪 Test1
+    uses: ./.github/workflows/app-custom-name1.yml
+  
+  test2:
+    name: 🧪 Test2
+    uses: ./.github/workflows/app-custom-name2.yml
+
+  test-custom:
+    name: 🧪 Test
+    uses: ./.github/workflows/app-${{ inputs.custom }}.yml
+  
+  test-print:
+    name: Print input
+    run: echo ${{ inputs.custom }}
+ 

@@ -1,0 +1,11 @@
+name: 👷 Build and tests
+
+env:
+  BRANCH_NAME: ${{ github.ref_name }}
+
+jobs:
+  build:
+    name: 🏗 Build
+    uses: ./.github/workflows/test.yml
+    with:
+      custom: custom-name1
